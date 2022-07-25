@@ -133,18 +133,20 @@
 								<span class="badge badge-secondary bg-primary" th:if="${map.post.type==1}">置顶</span>
 								<span class="badge badge-secondary bg-danger" th:if="${map.post.status==1}">精华</span>
 							</h6>
-<!--							<div class="text-muted font-size-12">-->
-<!--								<u class="mr-3" th:utext="${map.user.username}">寒江雪</u> 发布于 <b th:text="${#dates.format(map.post.createTime,'yyyy-MM-dd HH:mm:ss')}">2019-04-15 15:32:18</b>-->
-<!--								<ul class="d-inline float-right">-->
-<!--									<li class="d-inline ml-2">赞 <span th:text="${map.likeCount}">11</span></li>-->
-<!--									<li class="d-inline ml-2">|</li>-->
-<!--									<li class="d-inline ml-2">回帖 <span th:text="${map.post.commentCount}">7</span></li>-->
-<!--								</ul>-->
-<!--							</div>-->
+							<div class="text-muted font-size-12">
+								<u class="mr-3" th:utext="${map.user.username}">寒江雪</u> 发布于 <b th:text="${#dates.format(map.post.createTime,'yyyy-MM-dd HH:mm:ss')}">2019-04-15 15:32:18</b>
+								<ul class="d-inline float-right">
+									<li class="d-inline ml-2">赞 <span th:text="${map.likeCount}">11</span></li>
+									<li class="d-inline ml-2">|</li>
+									<li class="d-inline ml-2">回帖 <span th:text="${map.post.commentCount}">7</span></li>
+								</ul>
+							</div>
 						</div>						
 					</li>
 				</ul>
 				<!-- 分页 -->
+
+
 				<nav class="mt-5" th:if="${page.rows>0}" th:fragment="pagination">
 					<ul class="pagination justify-content-center">
 						<li class="page-item">
@@ -163,6 +165,7 @@
 						</li>
 					</ul>
 				</nav>
+
 			</div>
 		</div>
 

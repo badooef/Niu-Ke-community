@@ -24,6 +24,7 @@ private HostHolder hostHolder;
             LoginRequired loginRequired = method.getAnnotation(LoginRequired.class);
        if(loginRequired != null && hostHolder.getUser() == null) {
            response.sendRedirect(request.getContextPath()+"/login");
+           System.out.println(request.getContextPath().toString());
            return false;
        }
         }

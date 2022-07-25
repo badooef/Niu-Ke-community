@@ -1,4 +1,4 @@
-var CONTEXT_PATH = "";
+var CONTEXT_PATH = "http://localhost:8080/community";
 
 window.alert = function(message) {
 	if(!$(".alert-box").length) {
